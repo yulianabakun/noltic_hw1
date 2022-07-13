@@ -6,6 +6,8 @@
         <members>Man</members>
         <members>Woman</members>
         <members>Homework7</members>
+        <members>Fighter</members>
+        <members>Homework8</members>
         <name>ApexClass</name>
     </types>
     <version>54.0</version>
