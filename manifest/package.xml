@@ -10,7 +10,15 @@
         <members>Homework8</members>
         <members>Homework9</members>
         <members>Homework10</members>
+        <members>CaseHandler.cls-meta.xml</members>
+        <members>CountrySelector</members>
+        <members>CaseHandler</members>
+        <members>CaseService</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CaseTrigger</members>
+        <name>ApexTrigger</name>
     </types>
     <version>54.0</version>
 </Package>
