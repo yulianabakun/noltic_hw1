@@ -5,6 +5,7 @@ public with sharing class CountrySelector {
                 SELECT Id, SuccessMessage__c, ClosedCases__c, (
                         SELECT Id
                         FROM Cases__r
+                        WHERE Status = 'Closed'
                 )
                 FROM Country__c
                 WHERE Id IN :ids
