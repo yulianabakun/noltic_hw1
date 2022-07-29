@@ -1,5 +1,5 @@
 public with sharing class CaseService {
-    public static void updateCaseSuccess(List<Case> cases, Map<Id, Case> oldCases) {
+    public static void updateCaseSuccessMessage(List<Case> cases, Map<Id, Case> oldCases) {
         Map<Id, Country__c> countries = new Map<Id, Country__c>(getClosedCaseCountries(cases, oldCases));
 
         for (Case c : cases) {
