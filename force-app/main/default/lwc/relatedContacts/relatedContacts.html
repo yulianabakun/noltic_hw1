@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <lightning-spinner if:true={isLoading}></lightning-spinner>
+        <lightning-button label="Add Contact" onclick={handleAddContact}></lightning-button>
+        <template if:true={showContactForm}>
+            <lightning-card class="slds-p-horizontal_medium slds-p-bottom_medium">
+                <lightning-input label="Last Name" name="lastName" class="lastName"></lightning-input>
+                <lightning-button label="Save Contact" onclick={handleSaveContact}></lightning-button>
+            </lightning-card>
+        </template>
+        <template if:true={contacts.data}>
+            <c-contact-list contacts={contacts.data}></c-contact-list>
+        </template>
+    </lightning-card>
+</template>
