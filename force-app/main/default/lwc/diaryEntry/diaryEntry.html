@@ -1,0 +1,26 @@
+<!--
+ - Created by Yulisha on 8/24/2022.
+ -->
+
+<!-- Diary Entry -->
+<template>
+        <div class="container slds-p-around_medium ">
+            <div>
+                <span class="label">Created Date: </span>
+                <span class="value"><lightning-formatted-date-time value={record.CreatedDate}></lightning-formatted-date-time></span>
+            </div>
+            <div>
+                <span class="label">Note: </span>
+                <span class="value">{record.Note__c}</span>
+            </div>
+
+            <div class="slds-m-top_medium">
+                <lightning-button label="Delete"
+                                  variant="brand"
+                                  onclick={handleDelete}
+                ></lightning-button>
+            </div>
+
+        </div>
+
+</template>
