@@ -1,0 +1,29 @@
+
+<template>
+    <lightning-card>
+        <lightning-spinner if:false={diaries.data}></lightning-spinner>
+        <h2 class="header slds-m-bottom_medium">Diary</h2>
+
+        <template if:true={diaries.data}>
+            <template for:each={diaries.data} for:item="diary">
+                <div key={diary.Id} class="slds-p-horizontal_medium slds-p-bottom_medium">
+                    <c-diary-entry
+                            record={diary}
+                            ondelete={handleDelete}
+                    ></c-diary-entry>
+                </div>
+            </template>
+            <div class="slds-p-horizontal_medium slds-p-bottom_medium">
+                <lightning-input label="New note:"
+                                 placeholder="Type diary note..."
+                                 class="slds-m-bottom_large"
+                ></lightning-input>
+
+                <lightning-button label="Add"
+                                  variant="brand"
+                                  onclick={handleAdd}
+                ></lightning-button>
+            </div>
+        </template>
+    </lightning-card>
+</template>

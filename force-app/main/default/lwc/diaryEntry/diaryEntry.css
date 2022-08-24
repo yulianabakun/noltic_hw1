@@ -1,0 +1,11 @@
+/**
+ * Created by Yulisha on 8/24/2022.
+ */
+
+.container {
+  border: 1px solid black;
+}
+
+.label {
+  font-weight: bold;
+}
