@@ -14,11 +14,24 @@
         <members>CountrySelector</members>
         <members>CaseHandler</members>
         <members>CaseService</members>
+        <members>CaseTriggerTest</members>
+        <members>AccountController</members>
+        <members>ContactController</members>
+        <members>ContactRest</members>
         <name>ApexClass</name>
     </types>
     <types>
         <members>CaseTrigger</members>
         <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>contactList</members>
+        <members>contact</members>
+        <members>relatedContacts</members>
+        <members>ldsUtils</members>
+        <members>diary</members>
+        <members>diaryEntry</members>
+        <name>LightningComponentBundle</name>
     </types>
     <version>54.0</version>
 </Package>
