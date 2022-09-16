@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price_cannot_be_less_than_Zero</fullName>
+    <active>true</active>
+    <errorConditionFormula>Price__c  &lt; 0</errorConditionFormula>
+    <errorDisplayField>Price__c</errorDisplayField>
+    <errorMessage>Price cannot be less than Zero</errorMessage>
+</ValidationRule>

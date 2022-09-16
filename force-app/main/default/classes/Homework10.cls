@@ -3,6 +3,14 @@
  */
 
 public with sharing class Homework10 {
+    public static void test() {
+        try {
+            updateOpportunityStage('Prospecting', 'Prospecting');
+        }
+        catch(Exception e) {
+            System.debug('AAAAAAAAAAAAAAAAAAA\n' + e.getMessage());
+        }
+    }
     public static List<Opportunity> updateOpportunityStage (String stageNew, String stageOld){
         List<Schema.PicklistEntry> opportunityStages = Opportunity.StageName.getDescribe().getPicklistValues();
         Set<String> picklistValues = new Set<String>();
