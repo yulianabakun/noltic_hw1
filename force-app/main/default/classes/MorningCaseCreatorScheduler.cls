@@ -1,4 +1,3 @@
-
 public with sharing class MorningCaseCreatorScheduler implements Schedulable {
 
     public static void schedule() {

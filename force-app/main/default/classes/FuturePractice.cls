@@ -1,4 +1,3 @@
-
 public with sharing class FuturePractice {
     @future
     public static void createAccountFuture(String accountName) {

@@ -1,4 +1,3 @@
-
 public with sharing class ChangeAccountNamesBatch implements Database.Batchable<sObject>  {
     public List<SObject> start(Database.BatchableContext bc){
         return [SELECT Id, Name FROM Account];

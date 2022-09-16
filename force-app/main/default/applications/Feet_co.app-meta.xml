@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#ED47C1</headerColor>
+        <logo>Cinderella_Castle_October_1</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Feet co</label>
+    <navType>Standard</navType>
+    <tabs>Property__c</tabs>
+    <tabs>Payment__c</tabs>
+    <tabs>Gym_Visit__c</tabs>
+    <tabs>Class__c</tabs>
+    <tabs>Student__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Feet_co_UtilityBar</utilityBar>
+</CustomApplication>
