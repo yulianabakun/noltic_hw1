@@ -1,0 +1,28 @@
+
+<template>
+    <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+        <button class="slds-button slds-button_icon slds-button_icon-border-filled" onclick={handleClick} title="Show More">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24">;
+                <use xlink:href={iconName}></use>
+            </svg>
+        </button>
+        <template if:true={isDetailsVisible}>
+        <div class="slds-dropdown slds-dropdown_left">
+            <ul class="slds-dropdown__list" role="menu">
+                <template for:each={options} for:item="option">
+                    <li class="slds-dropdown__item" role="presentation" key={option.value}>
+                        <a href="#" role="menuitem" tabindex="0">
+                            <span class="slds-truncate" title={option.label}>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24">;
+                                     <use xlink:href={option.iconName}></use>
+                                </svg>
+                                {option.label}
+                            </span>
+                        </a>
+                    </li>
+                </template>
+            </ul>
+        </div>
+        </template>
+    </div>
+</template>
