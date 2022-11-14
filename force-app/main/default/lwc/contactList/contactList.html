@@ -1,0 +1,15 @@
+<!--
+ - Created by Yulisha on 8/16/2022.
+ -->
+
+<!-- Contact List -->
+<template>
+    <lightning-card title="Contacts">
+
+        <template for:each={contacts} for:item="contact">
+            <div key={contact.Id} class="slds-p-horizontal_medium slds-p-bottom_medium">
+                <c-contact record={contact}></c-contact>
+            </div>
+        </template>
+    </lightning-card>
+</template>

@@ -1,0 +1,32 @@
+<!--
+ - Created by Yulisha on 10/5/2022.
+ -->
+
+<!-- Create Ticket -->
+<template>
+    <lightning-card class=slds-p-around_medium>
+        <lightning-input label="From"
+                         onchange={handleChange}
+                         name="departure"
+        >From</lightning-input>
+        <lightning-input label="From"
+                         onchange={handleChange}
+                         name="destination"
+        >To</lightning-input>
+        <lightning-combobox
+                name="type"
+                label="Type"
+                value={type}
+                placeholder="Select Ticket Type"
+                options={options}
+                onchange={handleChange}
+        ></lightning-combobox>
+        <lightning-input
+                name="flightDate"
+                label="Date"
+                type="datetime"
+                onchange={handleChange}
+        ></lightning-input>
+        <lightning-button label="Submit" onclick={handleSubmit}></lightning-button>
+    </lightning-card>
+</template>

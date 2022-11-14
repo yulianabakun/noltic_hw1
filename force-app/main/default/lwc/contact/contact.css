@@ -1,0 +1,12 @@
+div {
+  padding: 4px;
+  display: inline-block;
+}
+
+:host {
+  display: block;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-bottom: 2px solid #c9c9c9;
+  width: 100%;
+}
